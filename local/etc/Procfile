@@ -1,0 +1,6 @@
+ftp: /usr/local/bin/start_ftp.sh
+sftp: /usr/local/bin/start_sftp.sh
+http: /usr/local/bin/start_http.sh
+webdav: /usr/local/bin/start_webdav.sh
+nfs: /usr/local/bin/start_nfs.sh
+
