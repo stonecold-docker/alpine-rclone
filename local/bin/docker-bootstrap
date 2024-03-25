@@ -8,3 +8,13 @@ fi
 
 touch /.init
 
+RUN_USER_NAME=${RUN_USER_NAME:-forumi0721}
+RUN_USER_UID=${RUN_USER_UID:-1000}
+RUN_USER_GID=${RUN_USER_GID:-100}
+
+docker-adduser -S /bin/bash -u ${RUN_USER_UID} -g ${RUN_USER_GID} -H /home/${RUN_USER_NAME} ${RUN_USER_NAME}
+
+RUN_USER_HOME=$(eval echo ~${RUN_USER_NAME})
+
+docker-chown ${RUN_USER_NAME} ${RUN_USER_HOME}
+

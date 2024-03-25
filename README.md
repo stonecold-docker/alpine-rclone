@@ -67,6 +67,9 @@ docker run -d \
 
 | ENV                | Description                                      |
 |--------------------|--------------------------------------------------|
+| RUN_USER_NAME      | Login user name (default:forumi0721)             |
+| RUN_USER_UID       | Login user uid (default:1000)                    |
+| RUN_USER_GID       | Login user gid (default:100)                     |
 | USER_NAME          |                                                  |
 | USER_PASSWD        |                                                  |
 | USER_UID           |                                                  |
