@@ -10,5 +10,3 @@ ENTRYPOINT ["docker-run"]
 
 EXPOSE 2121/tcp 62100-62199/tcp 8000/tcp 2049/tcp 2020/tcp 8080/tcp
 
-VOLUME /conf.d
-
