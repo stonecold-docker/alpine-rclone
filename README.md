@@ -2,10 +2,13 @@
 ![Docker Pulls](https://img.shields.io/docker/pulls/forumi0721/alpine-rclone)
 ![Docker Stars](https://img.shields.io/docker/stars/forumi0721/alpine-rclone)
 
-### x64
-![Docker Image Size](https://img.shields.io/docker/image-size/forumi0721/alpine-rclone/x64)
-### aarch64
-![Docker Image Size](https://img.shields.io/docker/image-size/forumi0721/alpine-rclone/aarch64)
+
+
+----------------------------------------
+### amd64
+![Docker Image Size (tag)](https://img.shields.io/docker/image-size/forumi0721/alpine-rclone/latest?arch=amd64)
+### arm64
+![Docker Image Size (tag)](https://img.shields.io/docker/image-size/forumi0721/alpine-rclone/latest?arch=arm64)
 
 
 
@@ -13,8 +16,8 @@
 #### Description
 
 * Distribution : [Alpine Linux](https://alpinelinux.org/)
-* Architecture : x64,aarch64
-* Appplication : [Rclone](https://rclone.org/)
+* Architecture : amd64, arm64
+* Application : [Rclone](https://rclone.org/)
     - Rclone is a command-line program to manage files on cloud storage. It is a feature-rich alternative to cloud vendors' web storage interfaces.
 
 
@@ -24,7 +27,7 @@
 
 ```sh
 docker run -d \
-           forumi0721/alpine-rclone:[ARCH_TAG]
+           forumi0721/alpine-rclone:latest
 ```
 
 
